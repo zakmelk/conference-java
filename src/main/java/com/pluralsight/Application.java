@@ -12,5 +12,6 @@ public class Application {
         SpeakerService speakerService = appContext.getBean("speakerService",SpeakerService.class);
         // because this service is a singleton, we mustn't store any user's information, the bean is shared across the application
         System.out.println(speakerService.findAll().get(0).getFirstName());
+        System.out.println(speakerService.findAll().get(0).getSeedNum());
     }
 }
